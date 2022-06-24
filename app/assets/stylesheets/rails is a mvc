@@ -1,0 +1,46 @@
+rails is a mvc
+model -db,view-web page,controller-brain behind the scenes
+app directory assests-image,css,config channel-app controller
+bin work without error
+cofnig-route
+ctrl+c to come back from server server is localhost-3000
+rails s to run or rails server
+erb embedded ruby
+ctrl+s to save file in file folder
+crud stands for create read update delete
+ rails g scaffold friends first_name:string last_name:string email:string phone:string twitter:string
+data types supportes in ruby are-
+binary,boolean,date,dateTime,decimal,float,integer,primary_key,string,text,time,timestamp
+scafford provide us jbuilder,assessts,helper,scss,test_unit,views like index.html,edit.html,show.html,new.html,form.html
+device is a gem that handle user mgmt
+gem third party thing that work 
+gem 'devise', '~> 4.8', '>= 4.8.1'
+bundle install
+rails generate devise:install
+config/environments/development.rb in enviroment development
+config.action_mailer.default_url_options={host: 'localhost',port:3000} in development envn
+config.action_mailer.default_url_options={host: 'localhost',port:3000} in production env we need to change the localhost and port
+define root_url
+flash message like alert notice
+copy devise views  rails g devise:views
+$ rails generate devise MODEL
+rails db:migrate
+cd /c/railsfriends/
+ cd friends/
+
+ <%= link_to 'Sign Out', destroy_user_session_path,method: :DELETE, class:'nav-link'%>
+ association connection between two records
+ type-
+ belongs to
+ has_one
+ has_many
+ has_many:through
+ has_one:through
+ has_and_belongs_to_many
+ we do association in friend and user model
+ rails g migration add_user_id_to_friends user_id:integer:index
+rails db:migrate
+<%=current_user.inspect%>
+<%=current_user.id%>
+
+

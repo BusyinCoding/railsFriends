@@ -1,0 +1,23 @@
+<h1 style="color:blue;">Show Friend</h1>
+<div class="container-fluid bg-primary text-white">
+  <h1 class="display-4">
+    <%= @friend.first_name %>
+    <%= @friend.last_name %>
+  </h1>
+  <p class="text-white">
+    <%= @friend.email %>
+    <br/>   
+    <%= @friend.phone %>    
+    <br/>
+    <%= @friend.twitter %>
+  </p>
+  <div class="btn-group">
+  <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-info" %>
+  <%= button_to friend_path(@friend),class: "btn btn-danger", method: :delete do %>
+  Delete
+<% end %>
+<%= link_to 'Back', friends_path, class:"btn btn-info" %>
+</div>
+<br/>
+
+</div>
